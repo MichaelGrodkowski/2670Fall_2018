@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Michael\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Michael\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_Assignment 0 Gitkraken.-200116151.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Michael\Documents\Homework\DGM2670_2018_F\2670Fall_2018\2018_Fall_2670\Assignment 0 Gitkraken" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets\Event_Script.cs" t="Include" />
+      <e p="Assets\NewBehaviourScript.cs" t="Include" />
+      <e p="Assets\Scenes" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="CharacterMovements.cs" t="Include" />
+          <e p="DestroyEvent.cs" t="Include" />
+          <e p="EventBasedBehavior" t="Include">
+            <e p="AIAgent.cs" t="Include" />
+            <e p="ForEachLoops.cs" t="Include" />
+            <e p="RunCountDown.cs" t="Include" />
+          </e>
+          <e p="Float.cs" t="Include" />
+          <e p="FloatDatas.cs" t="Include" />
+          <e p="FloatInput.cs" t="Include" />
+          <e p="MouseDownEvent.cs" t="Include" />
+          <e p="MovePattern.cs" t="Include" />
+          <e p="MovePatternDual.cs" t="Include" />
+          <e p="MovePatternNotGrounded.cs" t="Include" />
+          <e p="NewEvent.cs" t="Include" />
+          <e p="RunCountDown.cs" t="Include" />
+          <e p="SwitchStatement.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Assignment 0 Gitkraken.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
