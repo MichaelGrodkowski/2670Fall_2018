@@ -10,6 +10,7 @@
       <e p="Assets\Scenes" t="Include">
         <e p="Scripts" t="Include">
           <e p="CharacterMovements.cs" t="Include" />
+          <e p="Collection.cs" t="Include" />
           <e p="DestroyEvent.cs" t="Include" />
           <e p="EventBasedBehavior" t="Include">
             <e p="AIAgent.cs" t="Include" />
