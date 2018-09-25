@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: a black background .ma
-//Last modified: Tue, Sep 25, 2018 04:44:09 PM
+//Last modified: Tue, Sep 25, 2018 04:55:53 PM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,8 +13,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "11A264BA-4FFE-5EFC-DDEA-30B8E2F6F086";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 191.59176818283095 69.624676280158781 150.7678547514096 ;
-	setAttr ".r" -type "double3" -15.938352729603658 51.800000000000566 1.2857824640400499e-15 ;
+	setAttr ".t" -type "double3" 43.53920216599218 61.932383332785029 241.98071199654098 ;
+	setAttr ".r" -type "double3" -14.138352729603884 10.200000000000854 -1.0098839396450688e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "01257DEC-4F5C-D4B1-7B9B-F8A923F02E92";
 	setAttr -k off ".v" no;
@@ -324,6 +324,19 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+createNode transform -n "pCube2";
+	rename -uid "82039092-48E5-5984-76AA-628C87FE41F1";
+	setAttr ".t" -type "double3" 20.374495761162329 0 0 ;
+createNode mesh -n "pCubeShape2" -p "pCube2";
+	rename -uid "AC10F9BB-4050-38A9-2462-C0BECE438371";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "7B34ABA7-453A-EAAE-16F3-A68485AFD9CE";
 	setAttr -s 3 ".lnk";
@@ -396,6 +409,10 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "FAB332C8-44EF-E89F-B11A-9E95D6371C91";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode polyCube -n "polyCube1";
+	rename -uid "972E3638-4A2E-9FC3-71D6-A58357C2E1FE";
+	setAttr ".w" 0.9434;
+	setAttr ".cuv" 4;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -422,6 +439,7 @@ select -ne :defaultResolution;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+connectAttr "polyCube1.out" "pCubeShape2.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "phongE1SG.message" ":defaultLightSet.message";
@@ -437,4 +455,5 @@ connectAttr "Color_of_backdrop.msg" "materialInfo1.m";
 connectAttr "phongE1SG.pa" ":renderPartition.st" -na;
 connectAttr "Color_of_backdrop.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
+connectAttr "pCubeShape2.iog" ":initialShadingGroup.dsm" -na;
 // End of a black background .ma
