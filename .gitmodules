@@ -1,0 +1,3 @@
+[submodule "DGM_2670/Repo/2670Fall_2018/2018_Fall2670/InfiniteRunner"]
+	path = DGM_2670/Repo/2670Fall_2018/2018_Fall2670/InfiniteRunner
+	url = https://github.com/Unity-Technologies/NavMeshComponents.git
