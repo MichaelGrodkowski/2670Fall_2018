@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: A cube so I can save a commit.ma
-//Last modified: Fri, Nov 02, 2018 09:00:57 PM
+//Last modified: Mon, Nov 05, 2018 08:11:56 PM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -172,20 +172,58 @@ createNode mesh -n "pCubeShape4" -p "pCube4";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+createNode transform -n "pCube5";
+	rename -uid "38B08638-4F36-F61E-CEB6-81814D6C88FC";
+	setAttr ".t" -type "double3" 2.675902531543819 0 5.9945092952154759 ;
+createNode mesh -n "pCubeShape5" -p "pCube5";
+	rename -uid "CBB6D85D-4898-E008-424B-09A63D7E428E";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.375 0 0.625 0 0.375
+		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
+		 0.875 0.25 0.125 0 0.125 0.25;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 8 ".vt[0:7]"  -0.47170001 -0.5 0.5 0.47170001 -0.5 0.5
+		 -0.47170001 0.5 0.5 0.47170001 0.5 0.5 -0.47170001 0.5 -0.5 0.47170001 0.5 -0.5 -0.47170001 -0.5 -0.5
+		 0.47170001 -0.5 -0.5;
+	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
+		 3 5 0 4 6 0 5 7 0 6 0 0 7 1 0;
+	setAttr -s 6 -ch 24 ".fc[0:5]" -type "polyFaces" 
+		f 4 0 5 -2 -5
+		mu 0 4 0 1 3 2
+		f 4 1 7 -3 -7
+		mu 0 4 2 3 5 4
+		f 4 2 9 -4 -9
+		mu 0 4 4 5 7 6
+		f 4 3 11 -1 -11
+		mu 0 4 6 7 9 8
+		f 4 -12 -10 -8 -6
+		mu 0 4 1 10 11 3
+		f 4 10 4 6 8
+		mu 0 4 12 0 2 13;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "78A90B03-4A9C-B201-80EB-0DAF261B0FF1";
+	rename -uid "D6E77418-42CA-CFF6-E35C-F8A2CB5A1F25";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "EE0A10A9-40FD-A31E-E700-1B9EF89425BF";
+	rename -uid "A27C977B-4E6E-B069-A2E4-5696D2C2CA18";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "EA51E2B5-4673-376E-F6BC-1C9565C60622";
+	rename -uid "7A4FB0F3-4D45-93B9-DBFA-AEA53815DA62";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "C88674A9-4431-6F93-C440-BBBB43DA5119";
+	rename -uid "2F202451-4E08-F156-DBAA-3381B26A434F";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "177CCFC3-459C-6B3F-22A2-34BEE658D0EC";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "DE70FCD6-4690-82E9-4EB8-64AFA84F0C46";
+	rename -uid "8C31F4EE-4576-3D5B-784E-16A111B505D9";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "02E76AF1-4834-F58D-0ADA-9799588AE2A8";
 	setAttr ".g" yes;
@@ -261,7 +299,7 @@ select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
 select -ne :initialShadingGroup;
-	setAttr -s 4 ".dsm";
+	setAttr -s 5 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -283,4 +321,5 @@ connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape2.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape3.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape4.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "pCubeShape5.iog" ":initialShadingGroup.dsm" -na;
 // End of A cube so I can save a commit.ma
