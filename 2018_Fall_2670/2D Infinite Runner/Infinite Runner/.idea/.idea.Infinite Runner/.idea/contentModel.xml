@@ -14,6 +14,7 @@
           <e p="Simple AI.cs" t="Include" />
         </e>
         <e p="Destroyer_Block.cs" t="Include" />
+        <e p="Display_SO.cs" t="Include" />
         <e p="GameOverScript.cs" t="Include" />
         <e p="HUDscript.cs" t="Include" />
         <e p="OffsetScroll.cs" t="Include" />

@@ -1,0 +1,252 @@
+fileFormatVersion: 2
+guid: 17303aa984b26644489d36530dc88cc8
+timeCreated: 1543812057
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: coin sprite_0
+    21300002: coin sprite_1
+    21300004: coin sprite_2
+    21300006: coin sprite_3
+    21300008: coin sprite_4
+    21300010: coin sprite_5
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: coin sprite_0
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 41
+        width: 81
+        height: 90
+      alignment: 9
+      pivot: {x: 0.46653596, y: 0.5885001}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.5, y: 45}
+        - {x: -40.5, y: -45}
+        - {x: 40.5, y: -45}
+        - {x: 40.5, y: 45}
+      physicsShape:
+      - - {x: -40.5, y: 45}
+        - {x: -40.5, y: -45}
+        - {x: 40.5, y: -45}
+        - {x: 40.5, y: 45}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: coin sprite_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 138
+        width: 81
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.0740852, y: 39.87375}
+        - {x: -11.796333, y: 38.24884}
+        - {x: -23.824734, y: 31.401459}
+        - {x: -32.14116, y: 21.511093}
+        - {x: -36.261784, y: 9.927383}
+        - {x: -36.476433, y: -6.6716003}
+        - {x: -34.86565, y: -13.908554}
+        - {x: -30.291304, y: -21.06955}
+        - {x: -25.070904, y: -27.328934}
+        - {x: -17.57759, y: -32.56694}
+        - {x: -9.546501, y: -35.94876}
+        - {x: 2.3895912, y: -36.573303}
+        - {x: 13.527706, y: -34.535522}
+        - {x: 26.118492, y: -26.704788}
+        - {x: 31.62413, y: -20.594604}
+        - {x: 36.31935, y: -11.826096}
+        - {x: 37.87139, y: -4.338974}
+        - {x: 37.597794, y: 11.251816}
+        - {x: 33.757576, y: 20.395355}
+        - {x: 27.677734, y: 28.457626}
+        - {x: 21.747131, y: 33.424484}
+        - {x: 15.907284, y: 36.873962}
+      physicsShape:
+      - - {x: 19.349014, y: 32.445435}
+        - {x: 5.5492477, y: 36.54248}
+        - {x: -8.770596, y: 36.227722}
+        - {x: -19.988565, y: 31.057266}
+        - {x: -29.343626, y: 23.340012}
+        - {x: -35.103058, y: 12.499954}
+        - {x: -37.438946, y: -0.7546387}
+        - {x: -35.71787, y: -12.872681}
+        - {x: -30.282982, y: -23.940796}
+        - {x: -20.268764, y: -33.017685}
+        - {x: -9.012421, y: -37.61386}
+        - {x: 6.237858, y: -37.663498}
+        - {x: 16.560753, y: -35.379654}
+        - {x: 26.942413, y: -29.197906}
+        - {x: 34.978203, y: -17.597351}
+        - {x: 38.346954, y: -5.6287384}
+        - {x: 37.42424, y: 6.289459}
+        - {x: 33.872726, y: 16.063843}
+        - {x: 28.095428, y: 24.187042}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: coin sprite_2
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 136
+        width: 78
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39, y: 44}
+        - {x: -39, y: -44}
+        - {x: 39, y: -44}
+        - {x: 39, y: 44}
+      physicsShape:
+      - - {x: -39, y: 44}
+        - {x: -39, y: -44}
+        - {x: 39, y: -44}
+        - {x: 39, y: 44}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: coin sprite_3
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 138
+        width: 40
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 43}
+        - {x: -20, y: -43}
+        - {x: 20, y: -43}
+        - {x: 20, y: 43}
+      physicsShape:
+      - - {x: -20, y: 43}
+        - {x: -20, y: -43}
+        - {x: 20, y: -43}
+        - {x: 20, y: 43}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: coin sprite_4
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 42
+        width: 49
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: 42.5}
+        - {x: -24.5, y: -42.5}
+        - {x: 24.5, y: -42.5}
+        - {x: 24.5, y: 42.5}
+      physicsShape:
+      - - {x: -24.5, y: 42.5}
+        - {x: -24.5, y: -42.5}
+        - {x: 24.5, y: -42.5}
+        - {x: 24.5, y: 42.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: coin sprite_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 224
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -112, y: 86}
+        - {x: -112, y: -86}
+        - {x: 112, y: -86}
+        - {x: 112, y: 86}
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
