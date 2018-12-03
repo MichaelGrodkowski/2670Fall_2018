@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scriptable_Obj_obstacle : MonoBehaviour {
+   [CreateAssetMenu(fileName = "Obstacles", menuName = "Obstacle")]
+public class Scriptable_Obj_obstacle : ScriptableObject
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public new string emitter;
+
+
+    public Sprite image;
+    public int movement;
+    public int damage;
+    public int health;
+
 }
