@@ -9,21 +9,24 @@
       <e p="Assets\script.cs" t="Include" />
       <e p="Assets\Scripts" t="Include">
         <e p="CameraFollowing.cs" t="Include" />
-        <e p="CharacterController2D.cs" t="Include" />
         <e p="Class Script" t="Include">
+          <e p="CoinScript.cs" t="Include" />
           <e p="Simple AI.cs" t="Include" />
         </e>
-        <e p="Destroyer_Block.cs" t="Include" />
+        <e p="CoinCollections.cs" t="Include" />
         <e p="Display_SO.cs" t="Include" />
-        <e p="GameOverScript.cs" t="Include" />
+        <e p="Enviornment" t="Include">
+          <e p="CharacterController2D.cs" t="Include" />
+          <e p="Destroyer_Block.cs" t="Include" />
+          <e p="GameOverScript.cs" t="Include" />
+          <e p="OffsetScroll.cs" t="Include" />
+          <e p="PlatformScroll.cs" t="Include" />
+          <e p="PlayerMovement.cs" t="Include" />
+          <e p="ScrollingBackgGround.cs" t="Include" />
+          <e p="Spawningobjects.cs" t="Include" />
+        </e>
         <e p="HUDscript.cs" t="Include" />
-        <e p="OffsetScroll.cs" t="Include" />
-        <e p="PlatformScroll.cs" t="Include" />
-        <e p="PlayerMovement.cs" t="Include" />
-        <e p="PurchasableObject.cs" t="Include" />
         <e p="Scriptable_Obj_obstacle.cs" t="Include" />
-        <e p="ScrollingBackgGround.cs" t="Include" />
-        <e p="Spawningobjects.cs" t="Include" />
         <e p="Store.cs" t="Include" />
       </e>
       <e p="Infinite Runner.sln" t="IncludeFlat" />
