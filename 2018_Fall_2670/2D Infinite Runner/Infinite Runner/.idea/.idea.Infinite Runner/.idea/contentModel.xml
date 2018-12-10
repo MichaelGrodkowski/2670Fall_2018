@@ -10,10 +10,11 @@
       <e p="Assets\Scripts" t="Include">
         <e p="CameraFollowing.cs" t="Include" />
         <e p="Class Script" t="Include">
-          <e p="CoinScript.cs" t="Include" />
           <e p="Simple AI.cs" t="Include" />
         </e>
         <e p="CoinCollections.cs" t="Include" />
+        <e p="CoinScript.cs" t="Include" />
+        <e p="CoinText.cs" t="Include" />
         <e p="Display_SO.cs" t="Include" />
         <e p="Enviornment" t="Include">
           <e p="CharacterController2D.cs" t="Include" />
@@ -28,6 +29,7 @@
         <e p="HUDscript.cs" t="Include" />
         <e p="Scriptable_Obj_obstacle.cs" t="Include" />
         <e p="Store.cs" t="Include" />
+        <e p="StoreControl.cs" t="Include" />
       </e>
       <e p="Infinite Runner.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

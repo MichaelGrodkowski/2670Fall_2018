@@ -1,32 +1,37 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-[CreateAssetMenu]
-public class Store : ScriptableObject
+
+public class Store : MonoBehaviour
 {
- public object Item;
- public List<Object> Purchased;
- public int ItemValue;
- public IntData Cash;
+    public Text coinText;
+    public static int coinAmount;
+    private int isJetpackSold;
+    public GameObject JetPack;
 
-    public void Purchase()
+    void Start()
     {
-        if (Cash.Value < ItemValue) return;
-        {
-            Purchased.Add(Item);
-            Cash.Value -= ItemValue;
+        coinAmount = PlayerPrefs.GetInt("coinAmount");
+        isJetpackSold = PlayerPrefs.GetInt("isJetpackSold");
+        
+        if (isJetpackSold == 1)
+            JetPack.SetActive(true);
+        else
+          JetPack.SetActive(false);
         }
-    }
-
-    public void AddObjectToGame;
+    
+   void Update ()
    {
-       if (Purchased.Count <= 0) return;
-      {
-         Instantiate(Purchased[0]);
-          Purchased.RemoveAt(0);
-       }
+       coinText.text = "Money : " + coinAmount + "$";
+
+   }
+
+    public void gotoStore()
+    {
+        PlayerPrefs.SetInt ("coinAmount", coinAmount);
+        SceneManager.LoadScene("Shop Scene");
     }
 }
-
-
