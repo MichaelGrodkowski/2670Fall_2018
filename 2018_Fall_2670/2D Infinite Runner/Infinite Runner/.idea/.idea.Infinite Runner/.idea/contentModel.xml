@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Michael\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Michael\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_Infinite Runner.271066895.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Michael\Documents\Homework\DGM2670_2018_F\2670Fall_2018\2018_Fall_2670\2D Infinite Runner\Infinite Runner" t="IncludeRecursive">
+    <e p="C:\Users\10811094\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_Infinite Runner.634836372.00" t="ExcludeRecursive" />
+    <e p="C:\Users\10811094\Documents\Repo\December 2670\2670Fall_2018\2018_Fall_2670\2D Infinite Runner\Infinite Runner" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
-      <e p="Assets\Note about Editor Folder.txt" t="Include" />
-      <e p="Assets\script.cs" t="Include" />
-      <e p="Assets\Scripts" t="Include">
-        <e p="CameraFollowing.cs" t="Include" />
-        <e p="Class Script" t="Include">
-          <e p="Simple AI.cs" t="Include" />
+      <e p="Assets" t="Include">
+        <e p="Note about Editor Folder.txt" t="Include" />
+        <e p="script.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="Class Script" t="Include">
+            <e p="Simple AI.cs" t="Include" />
+          </e>
+          <e p="Enviornment" t="Include">
+            <e p="CameraFollowing.cs" t="Include" />
+            <e p="CharacterController2D.cs" t="Include" />
+            <e p="Destroyer_Block.cs" t="Include" />
+            <e p="Display_SO.cs" t="Include" />
+            <e p="GameOverScript.cs" t="Include" />
+            <e p="HUDscript.cs" t="Include" />
+            <e p="OffsetScroll.cs" t="Include" />
+            <e p="PlatformScroll.cs" t="Include" />
+            <e p="PlayerMovement.cs" t="Include" />
+            <e p="Scriptable_Obj_obstacle.cs" t="Include" />
+            <e p="ScrollingBackgGround.cs" t="Include" />
+            <e p="Spawningobjects.cs" t="Include" />
+          </e>
+          <e p="StoreAndCoins" t="Include">
+            <e p="CoinCollections.cs" t="Include" />
+            <e p="CoinScript.cs" t="Include" />
+            <e p="CoinText.cs" t="Include" />
+            <e p="Store.cs" t="Include" />
+            <e p="StoreControl.cs" t="Include" />
+          </e>
         </e>
-        <e p="CoinCollections.cs" t="Include" />
-        <e p="CoinScript.cs" t="Include" />
-        <e p="CoinText.cs" t="Include" />
-        <e p="Display_SO.cs" t="Include" />
-        <e p="Enviornment" t="Include">
-          <e p="CharacterController2D.cs" t="Include" />
-          <e p="Destroyer_Block.cs" t="Include" />
-          <e p="GameOverScript.cs" t="Include" />
-          <e p="OffsetScroll.cs" t="Include" />
-          <e p="PlatformScroll.cs" t="Include" />
-          <e p="PlayerMovement.cs" t="Include" />
-          <e p="ScrollingBackgGround.cs" t="Include" />
-          <e p="Spawningobjects.cs" t="Include" />
-        </e>
-        <e p="HUDscript.cs" t="Include" />
-        <e p="Scriptable_Obj_obstacle.cs" t="Include" />
-        <e p="Store.cs" t="Include" />
-        <e p="StoreControl.cs" t="Include" />
       </e>
       <e p="Infinite Runner.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />
